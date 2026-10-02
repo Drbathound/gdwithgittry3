@@ -12,7 +12,7 @@ public class otherscript : Node2D
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        
+        //PackedScene scene = new PackedScene();
     }
     public string OtherTestName{get; private set;} = "testtesttest";
     public string StateName{
