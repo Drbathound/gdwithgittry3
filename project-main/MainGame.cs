@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class MainScene : Node2D
+public class MainGame : Node
 {
 	// Declare member variables here. Examples:
 	// private int a = 2;
@@ -23,15 +23,12 @@ public class MainScene : Node2D
 		myother.StateName = "Jump";
 		GD.Print(myother.IsGrounded);
 		GD.Print(myother.StateName);
-		//myother.OtherTestName = "check test";
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
+//  // Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(float delta)
 	{
 		
-		//int randNumber = random.Next(1, 101);
-		//GD.Print(randNumber);
 	}
 
 	public string EnemyName{
@@ -43,5 +40,4 @@ public class MainScene : Node2D
 		}
 	}
 	public string TestName{get; set;} = "test";
-	//public string OtherTestName{get; private set;} = "testtesttest";
 }
