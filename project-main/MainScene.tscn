@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://project-main/MainGame.cs" type="Script" id=1]
+[ext_resource path="res://project-main/TestLevel.cs" type="Script" id=2]
 
 [node name="MainGame" type="Node"]
 pause_mode = 2
@@ -12,6 +13,9 @@ script = ExtResource( 1 )
 pause_mode = 1
 
 [node name="LevelRoot" type="Node2D" parent="World"]
+
+[node name="TestLevel" type="Node2D" parent="World/LevelRoot"]
+script = ExtResource( 2 )
 
 [node name="EntityRoot" type="Node2D" parent="World"]
 
